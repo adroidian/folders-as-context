@@ -21,6 +21,18 @@ Folders are not just storage. In an agent-readable workspace, paths help agents 
 - Not a secrets store.
 - Not a giant prompt disguised as a file tree.
 
+## Why this helps
+
+AI agents lose the plot when every instruction, fact, draft, decision, and proof artifact lives in the same flat pile. Folders as Context gives agents and humans a small shared grammar:
+
+- `incoming/` means raw and untrusted.
+- `receipts/` means evidence.
+- `decisions/proposed/` means not policy yet.
+- `decisions/accepted/` means current policy.
+- `data/wiki/` means durable distilled knowledge.
+
+This reduces giant prompts, improves restart recovery, and makes agent actions easier to audit.
+
 ## Install in Hermes
 
 Copy the skill folder into a Hermes profile skill directory:
